@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+    /* Shape behind hero image bg */
+    --color-Blue-600: hsl(231, 69%, 60%);
+
+    /* Tab active underline, hover state of links and tabs, expanded accordion and its icons */
+    --color-Red-400: hsl(0, 94%, 66%);
+
+    /* Headings */
+    --color-Blue-950: hsl(229, 31%, 21%);
+
+    /* Text */
+    --color-Grey-50: hsl(0, 0%, 97%);
+
+    /* Font */
+    --font-rubik: "Rubik", sans-serif;
+    --font-weight-500: 500;
+}
+
+.shape {
+    border-radius: 100vw; 
+}
+
+
