@@ -13,11 +13,11 @@ const Tabs = () => {
         <Tab tab="Speedy Searching" setActiveTab={setActiveTab} activeTab={activeTab} className="max-sm:py-6 max-sm:border-b border-gray-500/30"/>
         <Tab tab="Easy Sharing" setActiveTab={setActiveTab} activeTab={activeTab} className="max-sm:py-6 max-sm:border-b border-gray-500/30"/>
       </div>
-      {activeTab === "Simple Bookmarking" && <SimpleBookmarking />}
-
-      {activeTab === "Speedy Searching" && <SpeedySearching />}
-
-      {activeTab === "Easy Sharing" && <EasySharing />}
+      <div className="mt-6">
+        {activeTab === "Simple Bookmarking" && <SimpleBookmarking />}
+        {activeTab === "Speedy Searching" && <SpeedySearching />}
+        {activeTab === "Easy Sharing" && <EasySharing />}
+      </div>
     </div>
   );
 }
