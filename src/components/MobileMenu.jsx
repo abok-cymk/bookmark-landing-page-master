@@ -50,7 +50,7 @@ const MobileMenu = forwardRef((props, ref) => {
           />
         </ul>
       </div>
-      <div className="flex items-center justify-center gap-x-6">
+      <div className="flex items-center justify-center gap-x-10 pb-16">
         <Link to="/" onClick={() => setToggleMenu(false)}>
           <img
             src={`${baseImagePath}/icon-facebook.svg`}

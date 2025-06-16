@@ -20,7 +20,12 @@ const SpeedySearching = () => {
           Our powerful search feature will help you find saved sites in no time
           at all. No need to trawl through all of your bookmarks.
         </p>
-        <Link to="/">More Info</Link>
+        <Link
+          to="/"
+          className="hidden md:block bg-Blue-600 w-fit px-4 py-2 rounded-md text-Grey-50 font-500"
+        >
+          More Info
+        </Link>
       </div>
     </div>
   );

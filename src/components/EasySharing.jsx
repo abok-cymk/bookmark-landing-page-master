@@ -22,7 +22,12 @@ const EasySharing = () => {
           Easily share your bookmarks and collections with others. Create a
           shareable link that you can send at the click of a button.
         </p>
-        <Link to="/">More Info</Link>
+        <Link
+          to="/"
+          className="hidden md:block bg-Blue-600 w-fit px-4 py-2 rounded-md text-Grey-50 font-500"
+        >
+          More Info
+        </Link>
       </div>
     </div>
   );
