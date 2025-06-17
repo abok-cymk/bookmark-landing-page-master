@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./bookmark-screenshot.png)
+![](./bookmark-screenshot.jpeg)
 
 ### Links
 
