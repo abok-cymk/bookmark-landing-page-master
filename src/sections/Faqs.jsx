@@ -33,7 +33,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className="max-w-3xl mx-auto mt-24 md:mt-36 px-10 mb-24">
+    <section className="max-w-3xl mx-auto mt-24 md:mt-48 px-10 mb-24">
       <div className="text-center max-w-md mx-auto max-sm:px-2">
         <h2 className="text-3xl font-500 text-Blue-950 pb-4">
           Frequently Asked Questions

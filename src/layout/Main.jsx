@@ -1,3 +1,4 @@
+import ContactSection from "../sections/ContactSection";
 import DownloadExtensionSection from "../sections/DownloadExtensionSection";
 import Faqs from "../sections/Faqs";
 import Features from "../sections/Features";
@@ -10,6 +11,7 @@ const Main = () => {
       <Features />
       <DownloadExtensionSection />
       <Faqs />
+      <ContactSection />
     </main>
   );
 };

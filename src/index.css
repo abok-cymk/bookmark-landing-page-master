@@ -1,25 +1,39 @@
 @import "tailwindcss";
 
 @theme inline {
-    /* Shape behind hero image bg */
-    --color-Blue-600: hsl(231, 69%, 60%);
+  /* Shape behind hero image bg */
+  --color-Blue-600: hsl(231, 69%, 60%);
 
-    /* Tab active underline, hover state of links and tabs, expanded accordion and its icons */
-    --color-Red-400: hsl(0, 94%, 66%);
+  /* Tab active underline, hover state of links and tabs, expanded accordion and its icons */
+  --color-Red-400: hsl(0, 94%, 66%);
 
-    /* Headings */
-    --color-Blue-950: hsl(229, 31%, 21%);
+  /* Headings */
+  --color-Blue-950: hsl(229, 31%, 21%);
 
-    /* Text */
-    --color-Grey-50: hsl(0, 0%, 97%);
+  /* Text */
+  --color-Grey-50: hsl(0, 0%, 97%);
 
-    /* Font */
-    --font-rubik: "Rubik", sans-serif;
-    --font-weight-500: 500;
+  /* Font */
+  --font-rubik: "Rubik", sans-serif;
+  --font-weight-500: 500;
 }
 
 .shape {
-    border-radius: 100vw; 
+  border-radius: 100vw;
 }
 
+.logo__footer,
+.logo__mobileNav {
+  filter: invert(1) brightness(2);
+  /* mix-blend-mode: lighten; */
+}
 
+.social__link img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
+
+.social__link:is(:hover, :focus-visible) img {
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(-50deg)
+    brightness(1) contrast(2);
+}

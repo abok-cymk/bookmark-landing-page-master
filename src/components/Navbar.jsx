@@ -5,6 +5,7 @@ import MobileMenu from "./MobileMenu";
 const baseImagePath = import.meta.env.BASE_URL;
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -28,11 +29,29 @@ const Navbar = () => {
             <Logo />
             <nav>
               <ul className="hidden md:flex items-center gap-x-6 text-sm">
-                <NavLink link="features" />
-                <NavLink link="pricing" />
-                <NavLink link="contact" />
+                <NavLink
+                  link="features"
+                  to="#features"
+                  setActiveLink={setActiveLink}
+                  activeLink={activeLink}
+                />
+                <NavLink
+                  link="pricing"
+                  to="/"
+                  setActiveLink={setActiveLink}
+                  activeLink={activeLink}
+                />
+                <NavLink
+                  link="contact"
+                  to="#contact"
+                  setActiveLink={setActiveLink}
+                  activeLink={activeLink}
+                />
                 <NavLink
                   link="login"
+                  to="/"
+                  setActiveLink={setActiveLink}
+                  activeLink={activeLink}
                   className="bg-Red-400 text-Grey-50 rounded-md hover:bg-transparent hover:outline-2 px-4 py-1.5 w-full md:w-fit"
                 />
               </ul>
